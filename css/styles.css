@@ -1,0 +1,521 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+}
+
+:root {
+    --variable-bg-color: #ff7f99;
+
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 6.25rem;
+    padding: 0 2rem;
+    background-color: var(--variable-bg-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    width: 50%;
+    height: 100%;
+    color: white;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+
+.enlace-home {
+    width: 100%;
+}
+
+.logo {
+    width: 30%;
+    height: 100%;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.menu {
+    width: 20%;
+    height: auto;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#button {
+    width: 40%;
+    color: white;
+    background-color: #f28fa3;
+    font-weight: 200;
+    font-size: 1.75rem;
+    padding: 0.5rem 0.5rem;
+    border-radius: 40px;
+    border: solid 2px #FFCA41;
+    margin: 0.6rem;
+}
+
+#button:hover {
+    background-color: #FFCA41;
+}
+
+
+.contact {
+    width: 100%;
+    height: auto;
+    color: white;
+}
+
+main {
+  
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.superposicion {
+    width: 50%;
+    height: 100%;
+    padding: 2rem 4rem;
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+
+.gota {
+    background-color: var(--variable-bg-color);
+    border-radius: 50% 0 50% 50%;
+    grid-area: 1 / 1 / 2 / 2;
+    width: 100%;
+    height: 100%;
+}
+
+.foto-grupo {
+    border-radius: 50%;
+    grid-area: 1 / 1 / 2 / 2;
+    width: 98%;
+    height: 98%;
+    padding: 2% 0 0 2%;
+}
+
+.texto {
+    width: 50%;
+    height: 100%;
+    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.titulo {
+    font-size: 6.25rem;
+    font-weight: 200;
+    line-height: 0.8;
+    color: var(--variable-bg-color);
+}
+
+.descripcion {
+    font-size: 1.6rem;
+    font-weight: 200;
+    color: black;
+    padding-bottom: 1.5rem;
+}
+
+.descripcion-larga {
+    font-size: 1.2rem;
+    text-align: left;
+    color: black;
+    padding-bottom: 1.5rem;
+}
+
+.botones-perfil {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.te-llamamos {
+    background-color: #FFCA41;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 300;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: white solid 2px;
+}
+
+.te-llamamos:hover {
+    background-color: var(--variable-bg-color);
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background-color: var(--variable-bg-color);
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:row;
+}
+
+.especialista {
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.perfil {
+    border-radius: 50%;
+}
+
+.nombre {
+    color: white;
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+
+.cargo {
+    font-size: 1.15rem;
+}
+
+.enlace-linkedin {
+    width: 50px;
+    height: auto;
+    display: flex;
+}
+
+.linkedin {
+    width: 50px;
+    height: auto;
+}
+
+
+
+
+.main-form {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.titulo-form {
+    width: 100%;
+    text-align: center;
+    color: var(--variable-bg-color);
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.descripcion-form{
+    font-size: 1rem;
+    font-weight: 100;
+    padding-bottom: 2rem;
+}
+
+form {
+    width: 75%;
+    background-color: rgba(255, 202, 65, 0.5);
+    padding: 3rem 1rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0rem 2rem 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+input {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+select {
+    width: 100%;
+    font-size: 1rem;
+}
+
+#respuesta{
+    font-size: 1rem;
+    width: 100%;
+}
+
+.button-enviar {
+    position: relative;
+    padding-bottom: 3rem;
+ }
+
+.submit {
+    width: 30%;
+    background-color: #FFCA41;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 0.5rem 0rem;
+    border-radius: 2rem;
+    border: white solid 2px;
+    position: absolute;
+    right: 6%;
+    top: 5%;
+    
+}
+
+
+
+@media screen and (max-width: 992px) {
+
+    .logo {
+        width: 30%;
+    }
+
+    nav {
+        width: 60%;
+        font-size: 1.4rem;
+        gap: 1.5rem;
+    }
+
+    #button {
+        font-size: 1.4rem;
+        padding: 0.5rem 1rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .superposicion {
+        width: 80%;
+        padding: 3rem 1.5rem;
+    }
+
+    .texto {
+        width: 100%;
+        padding: 0 1.5rem 2rem 1.5rem;
+        gap: 0.6rem;
+        align-items: center;
+    }
+
+    .titulo {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    .titulo-form {
+        margin-top:2.5rem ;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .descripcion-form{
+        margin-bottom: 2.5rem;
+    }
+
+    .descripcion-larga{
+        padding: 0 4rem 1rem 4rem;
+        text-align: center;
+    }
+
+    .te-llamamos {
+        font-size: 1.1rem;
+    }
+
+    footer {
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .especialista {
+        width: 30%;
+        padding: 1.2rem 0.6rem;
+        gap: 0.3rem;
+    }
+
+    .perfil {
+        width: 100%;
+
+    }
+
+    .nombre {
+        text-align: center;
+        font-size: 1.3rem;
+    }
+}
+
+
+
+@media screen and (max-width: 576px) {
+
+    header {
+        height: 4rem;
+    }
+
+    .logo {
+        width: 60%;
+    }
+
+
+    .menu {
+        display: none;
+
+
+    }
+
+    nav {
+        width: 40%;
+        font-size: 1rem;
+        margin-left:30px;
+     
+    }
+
+    #button {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+   
+    main {
+        flex-direction: column;
+    }
+
+    .superposicion {
+        width: 100%;
+    }
+
+    .texto {
+        width: 100%;
+        gap: 5px;
+        align-items: center;
+        
+    }
+
+    .box{
+        margin-bottom: 40px;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .titulo-form {
+        margin-top:2.5rem ;
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .descripcion {
+        font-size: 1.2rem;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+      .descripcion-form{
+        font-size: 1rem;
+        font-weight: 200;
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .descripcion-larga{
+        font-size: 1rem;
+        padding: 1rem 2rem;
+        text-align: center;
+    }
+
+    .te-llamamos {
+        font-size: 1rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    footer {
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 2.5rem;
+    }
+
+    .especialista {
+        width: 100%;
+    }
+
+    .main-form{
+        width: 100%;
+        padding: rem 0;
+        margin:0;
+        margin-right: 20px;
+        padding: 0;
+        margin: 0;
+
+    }
+   
+    .form{
+   width: 100%;
+   padding: 0;
+   margin: 0;
+
+     
+    }
+
+    fieldset{
+        width: 100%
+        
+         
+    }
+
+    label{
+        width: 100%; 
+         
+    }
+
+    #nombre, #apellido, #email, #telefono{
+        width: 100%;
+        
+    }
+
+    .submit{
+        width: 50%;
+        margin-right: 3.5rem; 
+     
+
+    }
+
+}
+      
+
+a:link {
+    text-decoration: none;
+}
+
